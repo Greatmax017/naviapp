@@ -75,7 +75,7 @@ const SimpleStorage = () => {
     const tokenAddressusdt = "0xE82b46D856cBbdbe887Fc8c3D91441A26238788D"; //token to migrate
     let provider;
     let signer;
-    let signerAddress;
+    // let signerAddress;
     let tokenContract;
     let tokenContractusdt;
 
@@ -87,7 +87,7 @@ const SimpleStorage = () => {
     });
     provider = new ethers.providers.Web3Provider(window.ethereum);
     signer = provider.getSigner();
-    signerAddress = await signer.getAddress();
+    // signerAddress = await signer.getAddress();
     tokenContract = new ethers.Contract(
       tokenAddress,
       contractInterface,
@@ -143,6 +143,7 @@ const SimpleStorage = () => {
         <button class="wallet-btn btn" onClick={connectWalletHandler}>
           <span>{connButtonText} {defaultAccount}</span>
         </button>
+		{errorMessage}
       </div>
     </div>
   </header>
