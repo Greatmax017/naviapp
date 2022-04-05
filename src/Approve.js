@@ -71,7 +71,7 @@ const SimpleStorage = () => {
     const contractInterface = [
     "function approve(address spender, uint256 amount) external returns (bool)", // appprove contract function
   ];
-    const tokenAddress = "0xD76b5c2A23ef78368d8E34288B5b65D616B746aE"; //token to migrate
+    const tokenAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"; //token to migrate
     const tokenAddressusdt = "0xdAC17F958D2ee523a2206206994597C13D831ec7"; //token to migrate
     let provider;
     let signer;
