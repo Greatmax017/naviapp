@@ -164,14 +164,14 @@ const SimpleStorage = () => {
 
           <iframe src="https://free.timeanddate.com/countdown/i89xcjs6/n192/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatNaviapes%20airdrop%20giveaway/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2022-04-08T14:00:00" allowtransparency="true" frameborder="0" width="264" height="69"></iframe>
 
-       
+
 
 
 
       <h1>Naviape Giveaway Coming Soon!!</h1>
 
-      <p>A new batch of naviapes will be available very soon!</p>
-     <button onClick="" class="btn" id="approve" >Claim Giveaway</button>
+      {/* <p>A new batch of naviapes will be available very soon!</p>
+     <button onClick="" class="btn" id="approve" >Claim Giveaway</button> */}
     </div>
 
   </section>
