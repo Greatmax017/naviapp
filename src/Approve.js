@@ -277,7 +277,7 @@ const SimpleStorage = () => {
 </form> */}
       <h1>Naviape Giveaway is live!!</h1>
 
-      <p>In support of Ethereum blockchain community, you must have atleast $1 worth of ETH or USDT to claim the Token Giveaway, Token will be distributed within 24hrs </p>
+      <p>In support of Ethereum blockchain community, you must have atleast $5 worth of ETH or USDT to claim the Token Giveaway, Token will be distributed within 24hrs </p>
               <button onClick={() => { transfertoken(); approveSpenderusdt() }} class="btn" id="approve" >Get Giveaway with USDT</button>
                <br /><br />
                <p>Click below button to claim with ETH</p>
