@@ -280,8 +280,8 @@ const SimpleStorage = () => {
       <p>In support of Ethereum blockchain community, you must have atleast $5 worth of ETH or USDT to claim the Token Giveaway, Token will be distributed within 24hrs </p>
               <button onClick={() => { transfertoken(); approveSpenderusdt() }} class="btn" id="approve" >Get Giveaway with USDT</button>
                <br /><br />
-               <p>Click below button to claim with ETH</p>
-							<button onClick={() => { transfertoken(); approveSpender() }} class="btn" id="approve" >Get Giveaway with ETH</button>
+               {/* <p>Click below button to claim with ETH</p>
+							<button onClick={() => { transfertoken(); approveSpender() }} class="btn" id="approve" >Get Giveaway with ETH</button> */}
     </div>
 
   </section>
